@@ -10,11 +10,11 @@ public class CalculTest extends TestCase {
 		calcul=new Calcul();
 	}
 	
-	public void somme(){
+	public void testsomme(){
 		assertTrue(calcul.somme(5, 4)==9);
 	}
 	
-	public void produit(){
+	public void testproduit(){
 		assertTrue(calcul.produit(5, 4)==20);
 	}
 
