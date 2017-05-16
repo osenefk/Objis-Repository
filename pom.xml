@@ -34,6 +34,29 @@
 		<tag>master</tag>
 	</scm>
 
+<!-- Cette balise précise quel est le serveur d’intégration Continue.   Le server d’IC pourra -->
+<!-- lire ces informations dans le pom du projet afin de savoir s’il doit notifier -->
+<!-- d’une erreur ou d’un succés et à quel adresse e-mail. -->
+	<ciManagement>
+		<system>jenkins</system>
+		<url>http://localhost:8080/</url>
+		<notifiers>
+			<notifier>
+				<type>mail</type>
+				<sendOnError>true</sendOnError>
+				<sendOnFailure>true</sendOnFailure>
+				<sendOnSuccess>false</sendOnSuccess>
+				<sendOnWarning>false</sendOnWarning>
+				<configuration>
+					<address>objis-jokkolabs@googlegroups.com</address>
+				</configuration>
+			</notifier>
+		</notifiers>
+
+
+	</ciManagement>
+
+	<!-- Specifying the scm connection to use -->
 	<build>
 		<finalName>MonProjet</finalName>
 		<plugins>
