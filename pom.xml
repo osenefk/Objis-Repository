@@ -22,4 +22,14 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <!-- La balise scm veut dire Source Control Management. Elle indique où sont
+     déposé les différentes versions du code source des applications. Dans notre cas, il s'agit de Git -->
+	 
+	 <scm>
+		<connection>scm:git:https://github.com/osenefk/Objis-Repository.git</connection>
+		<developerConnection>scm:git:https://github.com/osenefk/Objis-Repository.git</developerConnection>
+		<url>https://github.com/osenefk/Objis-Repository.git</url>
+		<tag>master</tag>
+     </scm>
 </project>
